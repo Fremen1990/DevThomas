@@ -1,0 +1,2 @@
+#!/bin/sh
+git --work-tree=C:\Users\TOMASZ\Desktop\WWW DEVTHOMAS.PL\DEVTHOMAS --git-dir=C:\Users\TOMASZ\Desktop\WWW DEVTHOMAS.PL\DEVTHOMAS\.git.git checkout -f
