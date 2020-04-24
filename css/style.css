@@ -4,310 +4,285 @@ font-family: 'Saira', sans-serif;
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    position: relative;
-    background-color: #29a6dc;
-    height: 100vh;
-    overflow: hidden;
-    max-width: 1920px;
-    margin: 0 auto;
-
+  position: relative;
+  /* background-color: #29a6dc; */
+  background: linear-gradient(90deg, #3772f1, #b4a9e6);
+  height: 100vh;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-header>* {
-    position: absolute;
+header > * {
+  position: absolute;
 }
 
 header img {
-    position: absolute;
-    height: 50%;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  right: 0;
 }
 
 div.counter {
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    width: 200px;
-    z-index: 2;
-    color: white;
-    text-transform: uppercase;
-
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 200px;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
 }
 
 div.counterText {
-    font-size: 15px;
-    color: white;
-
+  font-size: 15px;
+  color: white;
 }
 
 div.counter div.counterPosition {
-    display: block;
-    color: white;
-
+  display: block;
+  color: white;
 }
-
 
 header div.welcome {
-    z-index: 1;
-    top: 8%;
-    left: 5%;
-    right: 5%;
-    font-family: 'Saira Condensed', sans-serif;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  z-index: 1;
+  top: 8%;
+  left: 5%;
+  right: 5%;
+  font-family: "Saira Condensed", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-
 header h1 {
-    margin-top: 15px;
-    font-size: 20px;
-
+  margin-top: 15px;
+  font-size: 35px;
 }
 
 header h2 {
-    font-size: 20px;
-    font-weight: 20px;
-    font-weight: normal;
+  font-size: 20px;
+  font-weight: 20px;
+  font-weight: normal;
 }
 
 header button {
-    font-family: 'Saira', sans-serif;
-    font-weight: 300;
-    line-height: 32px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    color: white;
-    background-color: transparent;
-    font-size: 12px;
-    border: 2px solid white;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  font-size: 12px;
+  border: 2px solid white;
 }
 
+@media (orientation: landscape) {
+  header img {
+    height: 80%;
+    bottom: 0;
+    right: 0%;
+  }
 
-@media(orientation:landscape) {
-    header img {
-        height: 80%;
-        bottom: 0;
-        right: 0%;
-    }
+  header div.welcome {
+    left: 10%;
+    right: 45%;
+    top: 15%;
+  }
 
-    header div.welcome {
-        left: 10%;
-        right: 45%;
-        top: 15%
-    }
-
-    header button {
-        margin-top: 40px;
-    }
+  header button {
+    margin-top: 40px;
+  }
 }
 
-@media(orientation:landscape) and (min-width: 640px) {
-    header h1 {
-        font-size: 24px;
-    }
+@media (orientation: landscape) and (min-width: 640px) {
+  header h1 {
+    font-size: 24px;
+  }
 
-    header h2 {
-        font-size: 28px;
-    }
+  header h2 {
+    font-size: 28px;
+  }
 
-    header button {
-        font-size: 16px;
-        line-height: 40px;
-    }
+  header button {
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
 
+@media (orientation: landscape) and (min-width: 1024px) {
+  header div.welcome {
+    left: 3%;
+  }
 
+  header p {
+    font-size: 56px;
+    transition: 0.5s;
+  }
 
-@media(orientation:landscape) and (min-width: 1024px) {
-    header div.welcome {
-        left: 3%;
-    }
-
-    header p {
-        font-size: 56px;
-        transition: .5s;
-    }
-
-    header p:hover {
+  /* header p:hover {
         font-size: 72px;
-    }
+    } */
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 34px;
-        transition: .5s;
-    }
+  header h1 {
+    margin-top: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+  }
 
-    header h1:hover {
-        font-size: 40px;
-    }
+  /* header h1:hover {
+    font-size: 40px;
+  } */
 
-    header h2 {
-        font-size: 34px;
-        transition: .5s;
-    }
+  header h2 {
+    font-size: 34px;
+    transition: 0.5s;
+  }
 
-    header h2:hover {
-        font-size: 40px;
-    }
+  /* header h2:hover {
+    font-size: 40px;
+  } */
 
-    header button {
-        margin-top: 80px;
-        font-size: 24px;
-        line-height: 70px;
-    }
+  header button {
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 70px;
+  }
 
-    header img {
-        right: -10%;
-        height: 95%;
-    }
-
-
+  header img {
+    right: -10%;
+    height: 95%;
+  }
 }
 
-@media(min-width:1024px) {
-    header button {
-        cursor: pointer;
-        transition: .4s;
-    }
+@media (min-width: 1024px) {
+  header button {
+    cursor: pointer;
+    transition: 0.4s;
+  }
 
-    header button:hover {
-        background-color: #fff;
-        color: #111;
-    }
-
-
+  header button:hover {
+    background-color: #fff;
+    color: #111;
+  }
 }
 
+@media (orientation: landscape) and (min-width: 1280px) {
+  header div.welcome {
+    text-align: left;
+    left: 6%;
+  }
 
-@media(orientation:landscape) and (min-width:1280px) {
-    header div.welcome {
-        text-align: left;
-        left: 6%;
-    }
+  header p {
+    font-size: 100px;
+  }
 
-    header p {
-        font-size: 100px;
-    }
+  header h1 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 50px;
-    }
+  header h2 {
+    font-size: 50px;
+  }
 
-    header h2 {
-        font-size: 50px;
-    }
+  header button {
+    margin-top: 100px;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 50px;
+    border: 2px solid white;
+  }
 
-    header button {
-        margin-top: 100px;
-        font-size: 30px;
-        line-height: 80px;
-        padding: 0 50px;
-        border: 2px solid white;
-    }
-
-    header img {
-        right: 5%;
-        height: 95%;
-    }
+  header img {
+    right: 5%;
+    height: 95%;
+  }
 }
 
-@media(orientation:landscape) and (min-width:1600px) {
+@media (orientation: landscape) and (min-width: 1600px) {
+  header p {
+    font-size: 120px;
+  }
 
+  header h1 {
+    margin-top: 40px;
+    font-size: 60px;
+  }
 
-    header p {
-        font-size: 120px;
-    }
+  header h2 {
+    font-size: 60px;
+  }
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 60px;
-    }
+  header button {
+    line-height: 90px;
+  }
 
-    header h2 {
-        font-size: 60px;
-    }
-
-    header button {
-        line-height: 90px;
-
-    }
-
-    header img {
-        right: -5%;
-        height: 90%;
-    }
+  header img {
+    right: -5%;
+    height: 90%;
+  }
 }
 
+@media (orientation: portrait) and (min-width: 360px) {
+  header h1 {
+    font-size: 24px;
+  }
 
+  header h2 {
+    font-size: 24px;
+  }
 
-
-
-@media (orientation:portrait) and (min-width: 360px) {
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    header h2 {
-        font-size: 24px;
-    }
-
-    header button {
-        margin-top: 24px;
-        line-height: 40px;
-        font-size: 16px;
-    }
-
+  header button {
+    margin-top: 24px;
+    line-height: 40px;
+    font-size: 16px;
+  }
 }
 
-@media (orientation:portrait) and (min-width: 410px) {
+@media (orientation: portrait) and (min-width: 410px) {
+  header h1 {
+    font-size: 26px;
+  }
 
-    header h1 {
-        font-size: 26px;
-    }
+  header h2 {
+    font-size: 26px;
+  }
 
-    header h2 {
-        font-size: 26px;
-    }
-
-    header button {
-        margin-top: 40px;
-        line-height: 50px;
-        font-size: 20px;
-    }
+  header button {
+    margin-top: 40px;
+    line-height: 50px;
+    font-size: 20px;
+  }
 }
 
-@media (orientation:portrait) and (min-width: 768px) {
+@media (orientation: portrait) and (min-width: 768px) {
+  header p {
+    font-size: 80px;
+  }
 
-    header p {
-        font-size: 80px;
-    }
+  header h1 {
+    font-size: 32px;
+  }
 
-    header h1 {
-        font-size: 32px;
-    }
+  header h2 {
+    font-size: 32px;
+  }
 
-    header h2 {
-        font-size: 32px;
-    }
-
-    header button {
-        margin-top: 60px;
-        line-height: 60px;
-        font-size: 24px;
-    }
+  header button {
+    margin-top: 60px;
+    line-height: 60px;
+    font-size: 24px;
+  }
 }
