@@ -134,6 +134,12 @@
   width: 100%;
 }
 
+.portfolio .project .budujemy {
+  display: block;
+  background: url(http://devthomas.pl/CoolProjects/Car%20Trip%20animation%20HTML%20CSS/);
+  height: 300px;
+  width: 500px;
+}
 .portfolio .about {
   color: white;
   font-family: "Saira", sans-serif;
