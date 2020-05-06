@@ -1,0 +1,146 @@
+.car-trip {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.car-trip__background {
+  position: relative;
+  background: url(jpg/LongRoadv2.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animateBackground 10s linear infinite;
+  animation-delay: 0.5s;
+}
+.car-trip__background-stop {
+  position: relative;
+  background: url(jpg/LongRoadv2.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: "";
+  animation-delay: 0.5s;
+}
+
+/* STYLES FOR BUTTON  */
+.car-trip__go {
+  color: black;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+  background-color: rgba(114, 139, 113, 0.726);
+  position: absolute;
+  border: 10px solid rgba(44, 136, 41, 0.692);
+  border-radius: 40px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+
+.car-trip__go:hover {
+  font-size: 35px;
+  background-color: rgb(201, 123, 20);
+  border: 10px solid rgba(255, 230, 0, 0.925);
+  color: black;
+  text-shadow: 3px 5px 5px rgb(201, 123, 20);
+  cursor: pointer;
+  box-shadow: 5px 5px 5px black;
+}
+
+.car-trip__stop {
+  color: black;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: initial;
+  background-color: red;
+  position: absolute;
+  border: 10px solid black;
+  border-radius: 50%;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+
+.car-trip__stop:hover {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: rgb(201, 20, 20);
+  border: 10px solid black;
+  color: black;
+  text-shadow: 3px 5px 5px rgb(201, 123, 20);
+  cursor: pointer;
+  box-shadow: 5px 5px 5px black;
+  animation: shake 0.5s infinite;
+}
+/* STYLES FOR A VEHICLE */
+.car-trip__car {
+  position: absolute;
+  transform: scale(0.35, 0.35) translateX(-50%);
+  top: 55px;
+  left: 150px;
+  /* animation: animateVehicle 2s; */
+}
+.car-trip__car-start {
+  position: absolute;
+  transform: scale(0.35, 0.35) translateX(-50%);
+  top: 55px;
+  left: 150px;
+  animation: animateVehicle 3s;
+}
+
+/* ANIMATIONS */
+@keyframes animateBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes animateVehicle {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 150px;
+  }
+}
+
+@keyframes animateVehicleGo {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 150px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, 0%) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-45%, 5%) rotate(10deg);
+  }
+
+  50% {
+    transform: translate(-55%, 5%) rotate(-10deg);
+  }
+
+  100% {
+    transform: translate(-50, 0%) rotate(0deg);
+  }
+}
