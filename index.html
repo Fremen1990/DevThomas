@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<div id="progressbar"></div>
     <header>
 
         <div class="counter">
@@ -251,6 +251,7 @@
             $('body, html').animate({
                 scrollTop: $('.portfolio').offset().top
             }, 800)
+            
         })
 
         // Licznik scroll position
@@ -299,6 +300,16 @@
             }
         }
         $(document).on('scroll', changeText)
+
+$(window).scroll(function(){
+    let scroll =$(window).scrollTop(),
+    dh=$(document).height(),
+    wh=$(window).height();
+    scrollPercent=(scroll/(dh-wh))*100;
+    $('#progressbar').css('height', scrollPercent + '%')
+})
+
+
     </script>
 </body>
 
