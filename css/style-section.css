@@ -139,6 +139,13 @@
   width: 100%;
   min-height: 350px;
 }
+
+.Car-trip-full-size {
+  position: relative;
+  left: 150px;
+  top: 50px;
+  font-size: 20px;
+}
 .portfolio .about {
   color: white;
   font-family: "Saira", sans-serif;
@@ -267,6 +274,7 @@
 .slogan p.text {
   font-family: "Saira", sans-serif;
   font-size: 18px;
+  color: white;
 }
 
 .slogan p.author {

@@ -175,6 +175,8 @@ header button {
   header button:hover {
     background-color: #fff;
     color: #111;
+    font-size: 35px;
+    border-radius: 20px;
   }
 }
 
