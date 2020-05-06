@@ -565,7 +565,7 @@
   }
 
   footer {
-    background-color: #29a6dc;
+    background: linear-gradient(90deg, #3772f1, #b4a9e6);
     color: white;
     font-family: "saira", sans-serif;
     text-align: center;
